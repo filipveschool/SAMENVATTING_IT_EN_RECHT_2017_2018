@@ -1,4 +1,6 @@
 \documentclass[master=ucll,11pt,dutch,twoside]{kulemt}
+%http://texdoc.net/texmf-dist/doc/latex/memoir/memman.pdf
+
 %\documentclass[master=ucll,11pt,dutch,twoside]{ucllfilip}
 
 %master is hetgene dat gedefinieerd staat in de .cfg file
@@ -273,14 +275,28 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 %origineel
 \include{inleiding}
 
-%\include{texfiles/inleiding/inleiding}
+\part{Sociaal Recht}
+
 %\import{texfiles/include-chapter1/}{chapter1.tex}
 
-\include{hfdst-1}
-\include{hfdst-2}
+\include{sociaalrecht/hoofdstuk1}
+\include{sociaalrecht/hoofdstuk2}
+\include{sociaalrecht/hoofdstuk3}
+\include{sociaalrecht/hoofdstuk4}
+\include{sociaalrecht/hoofdstuk5}
+\include{sociaalrecht/hoofdstuk6}
+\include{sociaalrecht/hoofdstuk7}
+
+
+
 % ... en zo verder tot
 \include{hfdst-n}
-\include{besluit}
+
+\part{ICT-RECHT}
+
+%\include{ictrecht/hoofdstuk1}
+
+%\include{besluit}
 
 %---------
 \aliaspagestyle{chapter}{nohead}
@@ -307,9 +323,6 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 
 \backmatter
 % Na de bijlagen plaatst men nog de bibliografie.
-% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere.
-%\bibliographystyle{abbrv}
-%\bibliography{referenties}
 
 %\pagestyle{afterbackmatterf}
 
