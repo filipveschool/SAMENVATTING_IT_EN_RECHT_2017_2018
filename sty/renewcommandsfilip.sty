@@ -1,0 +1,61 @@
+%%
+%% This is file `kulemtx.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% kulemtx.dtx  (with options: `style')
+%% 
+%% This is a generated file.
+%% 
+%% Copyright (C) 2012 by Luc Van Eycken <Luc.VanEycken@esat.kuleuven.be>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\NeedsTeXFormat{LaTeX2e}[2001/06/01]
+%rename this package and give filename same name as package
+\ProvidesPackage{renewcommandsfilip}
+    [2010/02/28 v0.1
+     Additions to the kulemt document class]
+     
+%Dit zorgt ervoor dat de nummering van een section in een chapter start met 1 ipv 1.1
+\renewcommand{\thesection}{\arabic{section}}
+
+%---------------------------------------------------------------
+% Customize Part met kleuren
+
+%Dit kleurt de titel dat je zelf invult binnen \part{} in PineGreen kleur en zonder vette font
+\renewcommand*{\parttitlefont}{\normalfont\Huge\scshape\color{PineGreen}}
+%Dit kleurt het gedeelte "Deel I" of "Chapter I" in PineGreen kleur en zonder vette font
+\renewcommand*{\partnamefont}{\normalfont\HUGE\scshape\color{PineGreen}}
+
+%Dit kleurt de Part gedeeltes in de inhoudsopgave in in het PineGreen color.
+\renewcommand*{\cftpartfont}{\scshape\color{PineGreen}\Large}
+
+%Dit kleurt de paginanummering in PineGreen color in in de inhoudsopgave
+\renewcommand*{\cftpartpagefont}{\color{PineGreen}}
+
+%Dit zorgt ervoor dat Deel in het nederlands en Part in het engels wordt bijgeschreven voor de nummering in de inhoudsopgave
+\renewcommand{\cftpartname}{\partname~}  
+
+%---------------------------------------------------------------
+
+%Customize chapter met kleuren
+
+%Dit zorgt ervoor dat Hoofdstuk in het nederlands en Chapter in het engels wordt bijgeschreven voor de nummering in de inhoudsopgave
+\renewcommand\cftchaptername{\chaptername~}
+
+   
+
+
+\endinput
+%%
+%% End of file `setupkeyvalues.sty'.

@@ -141,6 +141,8 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 	{
 	\usepackage[
 	%hidelinks = true,
+	%hidelinks=\tableofcontents,
+
     pdfusetitle, colorlinks, urlcolor=blue, linkcolor=blue,
 	plainpages=false ,bookmarks=true, bookmarksnumbered, linktoc=all, pdffitwindow=true,
 	pdftex,pdfauthor={\theauthor},pdftitle={\thetitle},pdfsubject={\thesubject},
@@ -190,6 +192,8 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 %\import{./}{acronyms.tex}
 %\import{glossary}
 
+\usepackage{sty/renewcommandsfilip}
+
 
 %%%%%%%
 % Om wat tekst te genereren wordt hier het lipsum pakket gebruikt.
@@ -211,6 +215,7 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 \end{preface}
 
 \tableofcontents*
+
 
 \begin{abstract}
   In dit \texttt{abstract} environment wordt een al dan niet uitgebreide
@@ -273,19 +278,19 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 \pagestyle{ruledfilip}
 
 %origineel
-\include{inleiding}
+%\include{inleiding}
 
 \part{Sociaal Recht}
 
 %\import{texfiles/include-chapter1/}{chapter1.tex}
 
-\include{sociaalrecht/hoofdstuk1}
-\include{sociaalrecht/hoofdstuk2}
-\include{sociaalrecht/hoofdstuk3}
-\include{sociaalrecht/hoofdstuk4}
-\include{sociaalrecht/hoofdstuk5}
-\include{sociaalrecht/hoofdstuk6}
-\include{sociaalrecht/hoofdstuk7}
+\include{sociaalrecht/hfdst1/hoofdstuk1}
+\include{sociaalrecht/hfdst2/hoofdstuk2}
+\include{sociaalrecht/hfdst3/hoofdstuk3}
+\include{sociaalrecht/hfdst4/hoofdstuk4}
+\include{sociaalrecht/hfdst5/hoofdstuk5}
+\include{sociaalrecht/hfdst6/hoofdstuk6}
+\include{sociaalrecht/hfdst7/hoofdstuk7}
 
 
 

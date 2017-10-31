@@ -623,7 +623,21 @@
 %\makefootrule{nohead}{\textwidth}{0.5pt}{0pt}
 
 \aliaspagestyle{chapter}{nohead}
-\maxsecnumdepth{subsection}
+
+%numbering
+%chapter: 1
+%section: 1.2
+%subsection: 1.2.3
+%subsubsection: 1.2.3.4
+%paragraph: 1.2.3.4.5
+%original
+%\maxsecnumdepth{subsection}
+
+%\maxsecnumdepth{subsection}
+%\maxsecnumdepth{subsubsection} % number subsubsections
+\maxsecnumdepth{paragraph} % number paragraph
+
+
 \maxtocdepth{section}
 \def\tocheadstart{\clearforchapter\chapterheadstart}
 \def\lofheadstart{\clearforchapter\chapterheadstart}
