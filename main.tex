@@ -141,8 +141,6 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
 	{
 	\usepackage[
 	%hidelinks = true,
-	%hidelinks=\tableofcontents,
-
     pdfusetitle, colorlinks, urlcolor=blue, linkcolor=blue,
 	plainpages=false ,bookmarks=true, bookmarksnumbered, linktoc=all, pdffitwindow=true,
 	pdftex,pdfauthor={\theauthor},pdftitle={\thetitle},pdfsubject={\thesubject},
@@ -214,7 +212,16 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
   %stagebegeleider \stagebegeleider
 \end{preface}
 
+%origineel
+%\tableofcontents*
+
+%Dit zorgt ervoor dat alleen de links blijven werken in de inhoudsopgave maar de kleur blijft zwart voor alle links in alleen de inhoudsopgave. 
+\begingroup
+\hypersetup{hidelinks}
+%\hypersetup{hidelinks, linkcolor=black}
 \tableofcontents*
+\endgroup
+
 
 
 \begin{abstract}
