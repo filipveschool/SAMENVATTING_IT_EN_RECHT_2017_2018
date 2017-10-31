@@ -201,6 +201,16 @@ intoc] % voegt de indexpagina aan de inhoudsopgave toe
  {\newcommand{\lipsum}[1][11-13]{\par Hier komt wat tekst: lipsum ##1.\par}}
 %%%%%%%
 
+\makeatletter
+\newcommand\subparagraphsection{\@startsection{subparagraph}{4}{\z@}%
+            {-2.5ex\@plus -1ex \@minus -.25ex}%
+            {2.25ex \@plus .25ex}%
+            {\bfseries\normalsize}}
+
+\makeatother
+            %{\normalfont\normalsize\itshape}}
+
+
 %\includeonly{hfdst-n}
 \begin{document}
 
